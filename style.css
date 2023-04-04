@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px 50px;
+}
+
+.input-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    gap: 20px;
+    padding: 0;
+
+}
+
+.degree{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container input{
+    background-color: black;
+    border: 1px solid white;
+    height: 40px;
+    padding-left: 10px;
+    width: 420px;
+    color: white;
+}
+
+.icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+.table{
+    border: 1px solid white;
+    width:100%;
+    border-spacing: 0;
+    min-height: 200px;
+    overflow-x: auto;
+    font-size: 14px;
+    color: white;
+}
+
+th,td{
+    text-align: center;
+}
+th{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+    border-right: 1px solid white;
+}
+tbody{
+    height: auto;
+}
+
+.search{
+    width:100%;
+    background-color: black;
+    border: 1px solid white;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width:100%;
+    padding-left: 10px;
+    color: white;
+}
+.button :hover{
+    cursor: pointer;
+}
+
+.button {
+    height: 40px;
+    width: 600px;
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 30px;
+}
+@media (max-width: 800px) {
+    /* CSS styles here */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      margin: 10px;
+      overflow-x: hidden;
+    }
+    .input-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 10px;
+    }
+    .input-container input {
+      width: 100%;
+    }
+    .table {
+      font-size: 10px;
+    }
+    .search, .button button {
+      width: 100%;
+      margin: 10px 0px;
+    }
+}
